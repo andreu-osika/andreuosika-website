@@ -1,0 +1,317 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   PP NEUE MONTREAL — Local Font Faces
+   ============================================================ */
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('/fonts/PPNeueMontreal-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('/fonts/PPNeueMontreal-ThinItalic.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('/fonts/PPNeueMontreal-Light.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('/fonts/PPNeueMontreal-LightItalic.otf') format('opentype');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('/fonts/PPNeueMontreal-Book.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('/fonts/PPNeueMontreal-BookItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('/fonts/PPNeueMontreal-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('/fonts/PPNeueMontreal-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('/fonts/PPNeueMontreal-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('/fonts/PPNeueMontreal-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('/fonts/PPNeueMontreal-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('/fonts/PPNeueMontreal-SemiBolditalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('/fonts/PPNeueMontreal-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('/fonts/PPNeueMontreal-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ============================================================
+   CSS CUSTOM PROPERTIES
+   ============================================================ */
+:root {
+  --font-montreal: 'Neue Montreal', sans-serif;
+  --light-grey: #fafcff;
+  --grey-1: #162027;
+  --grey-2: #3b4752;
+  --grey-3: #5d6973;
+  --grey-6: #becbd5;
+  --brand-purple: #9977ea;
+  --brand-pink: #e70aac;
+  --grad-1: #2f3376;
+  --grad-2: #280d4e;
+  --grad-3: #2e0152;
+  --grad-4: #9977ea;
+}
+
+/* ============================================================
+   BASE RESET
+   ============================================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-montreal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-montreal);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ============================================================
+   FADE-IN ANIMATIONS
+   ============================================================ */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================================
+   GRADIENT BAR — Animated bottom navigation bar
+   ============================================================ */
+.gradient-bar-outer {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 160px);
+  max-width: 1520px;
+  height: 60px;
+  z-index: 9998;
+  overflow: hidden;
+}
+
+.gradient-bar-bg {
+  background: linear-gradient(270deg, var(--grad-1), var(--grad-2), var(--grad-3), var(--grad-4));
+  background-size: 600% 600%;
+  animation: gradientShift 15s ease infinite;
+  opacity: 0.8;
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@media (max-width: 768px) {
+  .gradient-bar-outer {
+    left: 0;
+    transform: none;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* ============================================================
+   GRADIENT BAR — Icon buttons
+   ============================================================ */
+.bar-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  flex-shrink: 0;
+  text-decoration: none;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.bar-icon-btn:hover {
+  color: var(--brand-purple);
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+/* ============================================================
+   HOMEPAGE MENU
+   ============================================================ */
+.menu-wrap {
+  width: calc(100% - 160px);
+  max-width: 1520px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 65px;
+  padding-right: 65px;
+  padding-bottom: 150px;
+  padding-top: 0;
+}
+
+.menu-item-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+  -webkit-text-stroke: 0.4px white;
+}
+
+.menu-item-link:hover {
+  color: var(--brand-purple);
+  -webkit-text-stroke: 0.4px var(--brand-purple);
+}
+
+@media (max-width: 768px) {
+  .menu-wrap {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+}
+
+/* ============================================================
+   BACK ARROW
+   ============================================================ */
+.back-arrow-btn path {
+  transition: fill 0.3s ease;
+}
+
+/* Dark/black pages */
+.back-arrow-dark path {
+  fill: #9977ea;
+}
+
+.back-arrow-dark:hover path {
+  fill: #ffffff;
+}
+
+/* Light/grey pages */
+.back-arrow-light path {
+  fill: #becbd5;
+}
+
+.back-arrow-light:hover path {
+  fill: #9877e9;
+}
+
+/* ============================================================
+   NEXT PROJECT ARROW
+   ============================================================ */
+.next-arrow-btn {
+  color: white;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.next-arrow-btn:hover {
+  color: var(--brand-purple);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* ============================================================
+   MARQUEE — Client logo scroll on About page
+   ============================================================ */
+.marquee-track {
+  display: flex;
+  gap: 4rem;
+  animation: marqueeScroll 40s linear infinite;
+  width: max-content;
+}
+
+.marquee-track-reverse {
+  animation-direction: reverse;
+}
+
+@keyframes marqueeScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(calc(-100% - 4rem)); }
+}

@@ -246,9 +246,16 @@ img {
   -webkit-text-stroke: 0.4px white;
 }
 
-.menu-item-link:hover {
-  color: var(--brand-purple);
-  -webkit-text-stroke: 0.4px var(--brand-purple);
+@media (hover: hover) {
+  .menu-item-link:hover {
+    color: var(--brand-purple);
+    -webkit-text-stroke: 0.4px var(--brand-purple);
+  }
+}
+
+.menu-item-link:visited {
+  color: white;
+  -webkit-text-stroke: 0.4px white;
 }
 
 @media (max-width: 768px) {

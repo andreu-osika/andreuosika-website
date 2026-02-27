@@ -151,13 +151,27 @@ export default function EndorsementsPage() {
       </div>
 
       <style jsx>{`
+        @media (max-width: 770px) {
+          .endorsements-container {
+            padding-top: 130px !important;
+          }
+        }
+
         @media (max-width: 767px) {
           .endorsements-container {
             padding-left: 20px !important;
             padding-right: 20px !important;
           }
         }
+
+        @media (max-width: 500px) {
+          .endorsement-entry p {
+            font-size: 24px !important;
+            line-height: 1.5 !important;
+          }
+        }
       `}</style>
+
 
       <GradientBar
         label="Andreu Osika"

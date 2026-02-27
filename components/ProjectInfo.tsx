@@ -192,6 +192,19 @@ export default function ProjectInfo({
     padding-right: 20px;
   }
 }
+
+/* ── 500px: reduce font size to 24px (except labels) ── */
+@media (max-width: 500px) {
+  .project-info-text {
+    font-size: 24px !important;
+    line-height: 1.5 !important;
+  }
+  
+  .project-info-para li {
+    font-size: 24px !important;
+    line-height: 1.5 !important;
+  }
+}
       `}</style>
     </>
   )

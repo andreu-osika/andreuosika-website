@@ -89,7 +89,7 @@ veterinarians across the entire MARS ecosystem.
 for different brands, markets, and use cases without rebuilding from scratch. This included creating reusable UI patterns, 
 establishing design governance processes, and developing a library of approved components that enable creative flexibility.
 
-<strong>Multi-Brand Design System:</strong> Built design systems that work seamlessly across MARS's diverse brand portfolio - from consumer-facing apps 
+<strong>Multi-Brand Design System:</strong> I built design systems that work seamlessly across MARS's diverse brand portfolio - from consumer-facing apps 
 (Greenies, IAMS, myVCA) to veterinary diagnostic tools to third-party retailers (Walmart, Amazon). The system maintains 
 brand identity while ensuring consistent, accessible user experiences.
 
@@ -151,7 +151,7 @@ By creating reusable foundations, the platform enabled MARS to extend beyond pet
       
 
       //==== GREENIES-TOOTHSCAN  =====//
-      { layout: 'six', title: 'Mars Pet Care Digital Tools - Greenies Toothscan', images: [
+      { layout: 'six', title: 'Mars Pet Care - Digital Tools', images: [
         'mars-work/toothscan/greenies-1-new.png',
         'mars-work/toothscan/greenies-2-new.png',
         'mars-work/toothscan/greenies-3.png',
@@ -252,9 +252,11 @@ The Hero team redesigned the Concierge app ux across mobile and iPad. We introdu
     bgTheme: 'lightGrey',
     nextSlug: 'driftroom',
     deliverables: ['Creative Direction', 'Art Direction', 'Brand Identity', 'Graphic Design'],
-    description: `3MF is a groundbreaking CAD file format designed specifically for 3D printing. 3MF (3D Manufacturing Format)
-    optimizes accuracy and performance by enabling faster part prototyping, communication of complete model information, and flexible file creation. 
-    The 3MF Consortium was founded by industry leaders including Microsoft, Autodesk, HP, Dassault Systèmes, and others.
+    description: `
+    
+3MF is a groundbreaking CAD file format designed specifically for 3D printing. 3MF (3D Manufacturing Format)
+optimizes accuracy and performance by enabling faster part prototyping, communication of complete model information, and flexible file creation. 
+The 3MF Consortium was founded by industry leaders including Microsoft, Autodesk, HP, Dassault Systèmes, and others.
 
 I developed a brand concept that communicates the technical precision and forward-thinking nature of the format, while remaining accessible to a broad audience of designers, engineers, and manufacturers.`,
     sections: [
@@ -276,12 +278,15 @@ I developed a brand concept that communicates the technical precision and forwar
     bgTheme: 'lightGrey',
     nextSlug: 'achieve-design-system',
     deliverables: ['Product Concept', 'Business Plan', 'Brand Identity', 'Illustration', 'UXUI Design'],
-    description: `Driftroom is a startup idea that introduces an alternative to the typical dating apps that
-    currently exist on the market. Most of these apps share the same premise and user experience but they don't
-    offer what many people really want - a safe, meaningful connection based on shared interests and authentic
-    conversation before visual judgment takes over.
-    Driftroom leads with personality and shared interests, allowing users to connect through conversations and
-    mutual passions before photos are revealed. The platform uses a progressive reveal model that builds genuine chemistry first.`,
+    description: `
+Driftroom is a startup idea that introduces an alternative to the typical dating apps that
+currently exist on the market. Most of these apps share the same premise and user experience but they don't
+offer what many people really want - a safe, meaningful connection based on shared interests and authentic
+conversation before visual judgment takes over.
+
+
+Driftroom leads with personality and shared interests, allowing users to connect through conversations and
+mutual passions before photos are revealed. The platform uses a progressive reveal model that builds genuine chemistry first.`,
     sections: [
       { layout: 'hero', images: ['logo_01.svg'] },
       { layout: 'full', images: ['logo_02_new.svg'] },
@@ -386,10 +391,12 @@ Managing a design systems focused team, we created a new, on-brand design system
     bgTheme: 'lightGrey',
     nextSlug: 'nokia',
     deliverables: ['Brand Concept'],
-    description: `Self initiated project - a new visual identity for San Francisco's MUNI public transportation system.
-    The inspiration comes from the phrase ‘City by the Bay’ - bay meaning water. I felt this quality
-    would be compelling to convey in the idenity, hence the inter-locking wave forms and blue color.
-    The wave forms can be de-constructed to form M - U - N - I. Ultimately I wanted to create something that felt different, trustworthy, as well as human.`,
+    description: `
+Self initiated project - a new visual identity for San Francisco's MUNI public transportation system.
+The inspiration comes from the phrase ‘City by the Bay’ - bay meaning water. I felt this quality
+would be compelling to convey in the idenity, hence the inter-locking wave forms and blue color.
+
+The wave forms can be de-constructed to form M - U - N - I. Ultimately I wanted to create something that felt different, trustworthy, as well as human.`,
     sections: [
       { layout: 'hero', images: ['muni_01.png'] },
       { layout: 'full', images: ['muni_02.png'] },
@@ -408,9 +415,10 @@ Managing a design systems focused team, we created a new, on-brand design system
     bgTheme: 'white',
     nextSlug: 'candeloo',
     deliverables: ['Product Concept', 'App UXUI'],
-    description: `Time Traveler is a mobile app concept that focuses on the specific use case of leaving for a destination. It focuses on time as 
-    a core component of the travel experience rather than the route itself - answering the fundamental question: 
-    “When do I need to leave?” - rather than - “How do I get there?”
+    description: `
+Time Traveler is a mobile app concept that focuses on the specific use case of leaving for a destination. It focuses on time as 
+a core component of the travel experience rather than the route itself - answering the fundamental question: 
+“When do I need to leave?” - rather than - “How do I get there?”
 
 The app intelligently calculates departure times based on current traffic, transit schedules, and user preferences, delivering a calm, confident travel experience.`,
     sections: [
@@ -549,7 +557,10 @@ As Head of UX Design at Mursion, my team and I helped create the vision and desi
     bgTheme: 'lightGrey',
     nextSlug: 'haspit',
     deliverables: ['Design System', 'Icon Design', 'App UXUI'],
-    description: `During my time at Hero, I was fortunate enough to work on the Comcast account and help the team create new mobile experiences for their Xfinity modem service customers. Work included designing new, improved device setup flows, improved troubleshooting experiences, a redesigned icon set, and new design system components that extended Comcast's existing visual language.`,
+    description: `
+During my time at Hero, I was fortunate enough to work on the Comcast account and help the team create new mobile experiences for their Xfinity modem service customers.
+
+Work included designing new, improved device setup flows, improved troubleshooting experiences, a redesigned icon set, and new design system components that extended Comcast's existing visual language.`,
     sections: [
       { layout: 'hero', images: ['comcast_01.png'] },
       { layout: 'full', images: ['comcast_02.png'] },
@@ -562,7 +573,7 @@ As Head of UX Design at Mursion, my team and I helped create the vision and desi
   {
     slug: 'haspit',
     title: 'Haspit',
-    bgTheme: 'lightGrey',
+    bgTheme: 'black',
     nextSlug: 'corrus',
     deliverables: ['Branding', 'Art Direction', 'Website', 'App UXUI'],
     description: `Bay area tech startup Haspit approached me with a dream project. They needed a brand identity, marketing website as
@@ -630,7 +641,7 @@ My recommendation was to abandon the current flawed design and re-architect the 
   {
     slug: 'mercury-soul',
     title: 'Mercury',
-    bgTheme: 'lightGrey',
+    bgTheme: 'black',
     nextSlug: 'cargill',
     deliverables: ['Brand Identity', 'Art Direction'],
     description: `Mercury Soul is a San Francisco nightclub experience that merges classical music performance with 
@@ -652,10 +663,14 @@ My recommendation was to abandon the current flawed design and re-architect the 
     bgTheme: 'black',
     nextSlug: 'tradeclash',
     deliverables: ['Product Concept', 'App UXUI'],
-    description: `I worked on this with the Head of BI of Cargill in Singapore. The proposed concept allowed users to search a 
-    phrase within the Cargill global network. Resulting data visualizations showed where the phrase was being used geographically, 
-    in which business units, and over time - giving leadership unprecedented insight into how ideas, concerns, and themes 
-    travel through a 155,000-person global organization.`,
+    description: `
+    
+I worked on this with the Head of BI of Cargill in Singapore. The proposed concept allowed users to search a 
+phrase within the Cargill global network. 
+
+Resulting data visualizations showed where the phrase was being used geographically, 
+in which business units, and over time - giving leadership unprecedented insight into how ideas, concerns, and themes 
+travel through a 155,000-person global organization.`,
     sections: [
       { layout: 'hero', images: ['cargill_01.png'] },
       { layout: 'full', images: ['cargill_02.png'] },
@@ -690,10 +705,16 @@ My recommendation was to abandon the current flawed design and re-architect the 
     bgTheme: 'black',
     nextSlug: 'yahoo',
     deliverables: ['Naming', 'Logo Design', 'Illustration', 'Industrial Design', 'Rhino 3D CAD'],
-    description: `Baltik is a ready to assemble, customizable standing computer desk. After realizing it’s healthier and more comfortable to stand instead of sitting while working, I decided to design my own custom desk. My design features hardware free assembly and custom shelf heights. The baltic birch plywood components are cut out via a platform CNC router from CAD generated DXF files.`,
+    description: `
+    
+Baltik is a ready to assemble, customizable standing computer desk. After realizing it’s healthier and more comfortable to stand instead of sitting while working, I decided to design my own custom desk.
+
+My design features hardware free assembly and custom shelf heights. The baltic birch plywood components are cut out via a platform CNC router from CAD generated DXF files.`,
     sections: [
-      { layout: 'hero', images: ['baltik_logo_big.png'] },
+      
       { layout: 'four', images: ['baltik_image_04.jpg', 'baltik_image_05.jpg','baltik_image_03.jpg', 'baltik_image_01.jpg'  ] },
+
+      { layout: 'hero', images: ['baltik_logo_big.png'] },
      
       { layout: 'full', images: ['baltik_image_02.jpg'] },
 

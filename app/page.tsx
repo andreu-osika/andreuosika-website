@@ -71,7 +71,7 @@ export default function HomePage() {
               }}
             >
               I’m a digital product designer who helps innovation teams in healthcare and pet health accelerate 0-to-1 product development. 
-              With 20+ years of digtial design experience and AI-augmented execution, I deliver enterprise quality work on startup timelines - turning concepts 
+              With 20+ years of digital design experience and AI-augmented execution, I deliver enterprise quality work on startup timelines - turning concepts 
               into validated prototypes in weeks, not months. I bridge platform architecture, product UX, design systems, and rapid prototyping
               to move initiatives from idea to market-ready faster than traditional design cycles.
             </p>
@@ -87,7 +87,7 @@ export default function HomePage() {
               }}
             >
               My background includes an MFA in Industrial Design from RISD, published work in Communication Arts, ID Magazine, and Graphis, and 
-              two decades designing digital products - from companies like Nokia, Yahoo, and Apple to MARS’s innovation group, where I’ve helped 
+              two decades designing digital products - from companies like Nokia, Yahoo, and Apple to MARS’s innovation group, where I'm currently engaged in helping
               productize AI for pet health diagnostics. I specialize at the intersection of health innovation, applied AI, and human-centered design.
             </p>
 
@@ -116,11 +116,16 @@ export default function HomePage() {
                 margin: 0,
               }}
             >
-              I've been fortunate to collaborate with remarkable teams and leaders throughout my career. Read their{' '}
+              I've been fortunate to collaborate with remarkable teams and leaders throughout my career.<br/>
+              <br/>
+              Read their endorsements{' '}
               <Link href="/endorsements" className="endorsements-link">
-                endorsements
+                here
               </Link>
               .
+              <br/>
+              <br/>
+              <br/>
             </p>
           </div>
         </div>
@@ -132,7 +137,7 @@ export default function HomePage() {
         .homepage-inner {
           width: calc(100% - 160px);
           max-width: 1240px;
-          margin: 0 auto 60px;
+          margin: 0 auto 160px;
           padding-top: 60px;
           display: flex;
           flex-direction: row;
@@ -207,6 +212,18 @@ export default function HomePage() {
             width: 100%;
             padding-left: 20px;
             padding-right: 20px;
+          }
+        }
+
+        @media (max-width: 500px) {
+          .homepage-inner > div:last-child p {
+            font-size: 24px !important;
+            line-height: 1.5 !important;
+            padding-bottom: 20px !important;
+          }
+          
+          .homepage-inner > div:last-child p:last-child {
+            padding-bottom: 0px !important;
           }
         }
       `}</style>

@@ -57,6 +57,7 @@ export default function ArtSection({ section, index = 0, isLast = false }: ArtSe
   // ← declare titleEl here, once
   const titleEl = section.title ? (
   <p
+    className="section-title"
     style={{
       fontFamily: "'Neue Montreal', sans-serif",
       fontSize: '45px',
@@ -76,49 +77,111 @@ export default function ArtSection({ section, index = 0, isLast = false }: ArtSe
   // ── HERO ──
   if (layout === 'hero') {
     return (
-      <div className={wrapperClass} style={{ ...wrapperStyle, marginBottom: '20%' }}>
-        {titleEl}
-      <div className="w-full max-w-[1400px]">{img(images[0])}</div>
-      </div>
+      <>
+        <div className={wrapperClass} style={{ ...wrapperStyle, marginBottom: '20%' }}>
+          {titleEl}
+        <div className="w-full max-w-[1400px]">{img(images[0])}</div>
+        </div>
+        
+        <style jsx global>{`
+          @media (max-width: 640px) {
+            .section-title {
+              font-size: 28px !important;
+            }
+          }
+        `}</style>
+      </>
     )
   }
 
   // ── FULL ──
 if (layout === 'full') {
   return (
-    <div className={wrapperClass} style={wrapperStyle}>
-      <div className="w-full max-w-[1400px]">
-        {titleEl}
-        <div>{img(images[0])}</div>
+    <>
+      <div className={wrapperClass} style={wrapperStyle}>
+        <div className="w-full max-w-[1400px]">
+          {titleEl}
+          <div>{img(images[0])}</div>
+        </div>
       </div>
-    </div>
+      
+      <style jsx global>{`
+        @media (max-width: 640px) {
+          .section-title {
+            font-size: 28px !important;
+          }
+        }
+      `}</style>
+    </>
   )
 }
 
   // ── CONTAINED ──
   if (layout === 'contained') {
     return (
-      <div className={wrapperClass} style={wrapperStyle}>
-        {titleEl}
-        <div className="w-full max-w-[1024px]">{img(images[0])}</div>
-      </div>
+      <>
+        <div className={wrapperClass} style={wrapperStyle}>
+          {titleEl}
+          <div className="w-full max-w-[1024px]">{img(images[0])}</div>
+        </div>
+        
+        <style jsx global>{`
+          @media (max-width: 640px) {
+            .section-title {
+              font-size: 28px !important;
+            }
+          }
+        `}</style>
+      </>
     )
   }
 
   // ── DOUBLE ──
 if (layout === 'double') {
   return (
-    <div className={wrapperClass} style={wrapperStyle}>
-      {titleEl}
-      <div
-        className="w-full max-w-[1400px]"
-        style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '35px' }}
-      >
-        {images.map((item, idx) => (
-          <div key={getKey(item, idx)}>{img(item)}</div>
-        ))}
+    <>
+      <div className={wrapperClass} style={wrapperStyle}>
+        {titleEl}
+        <div
+          className="w-full max-w-[1400px] portfolio-double-grid"
+          style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '35px' }}
+        >
+          {images.map((item, idx) => (
+            <div key={getKey(item, idx)}>{img(item)}</div>
+          ))}
+        </div>
       </div>
-    </div>
+      
+      <style jsx>{`
+        .portfolio-double-grid {
+          gap: 35px !important;
+        }
+        @media (max-width: 1024px) {
+          .portfolio-double-grid {
+            gap: 35px !important;
+          }
+        }
+        @media (max-width: 768px) {
+          .portfolio-double-grid {
+            gap: 35px !important;
+          }
+        }
+        @media (max-width: 640px) {
+          .portfolio-double-grid {
+            width: 90% !important;
+            gap: 2.5% !important;
+          }
+        }
+      `}</style>
+      
+      <style jsx global>{`
+        @media (max-width: 640px) {
+          .section-title {
+            font-size: 28px !important;
+          }
+        }
+      `}</style>
+    </>
   )
 }
 
@@ -127,89 +190,159 @@ if (layout === 'double') {
   // ── TRIPLE-BIG: 3-column grid ──
  if (layout === 'triple-big') {
   return (
-    <div className={wrapperClass} style={wrapperStyle}>
-      <div className="w-full max-w-[1400px]">
-        {titleEl}
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
-            gap: '35px',
-          }}
-        >
-          {images.map((item, idx) => (
-            <div key={getKey(item, idx)}
+    <>
+      <div className={wrapperClass} style={wrapperStyle}>
+        <div className="w-full max-w-[1400px]">
+          {titleEl}
+          <div
+            className="portfolio-triple-big-grid"
             style={{
-            borderRadius: '0px',
-            overflow: 'hidden',
+              display: 'grid',
+              gridTemplateColumns: 'repeat(3, 1fr)',
+              gap: '35px',
             }}
-            >{img(item)}</div>
-          ))}
+          >
+            {images.map((item, idx) => (
+              <div key={getKey(item, idx)}
+              style={{
+              borderRadius: '0px',
+              overflow: 'hidden',
+              }}
+              >{img(item)}</div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+      
+      <style jsx>{`
+        .portfolio-triple-big-grid {
+          gap: 35px !important;
+        }
+        @media (max-width: 1024px) {
+          .portfolio-triple-big-grid {
+            gap: 35px !important;
+          }
+        }
+        @media (max-width: 768px) {
+          .portfolio-triple-big-grid {
+            gap: 35px !important;
+          }
+        }
+        @media (max-width: 640px) {
+          .portfolio-triple-big-grid {
+            width: 90% !important;
+            margin: 0 auto !important;
+            gap: 2.5% !important;
+          }
+        }
+      `}</style>
+      
+      <style jsx global>{`
+        @media (max-width: 640px) {
+          .section-title {
+            font-size: 28px !important;
+          }
+        }
+      `}</style>
+    </>
   )
 }
 
 // ── QUAD: 4-column grid ──
 if (layout === 'quad') {
   return (
-    <div className={wrapperClass} style={wrapperStyle}>
-      <div className="w-full max-w-[1400px]">
-        {titleEl}
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr 1fr 1fr',
-            gap: '35px',
-          }}
-        >
-          {images.map((item, idx) => (
-            <div
-              key={getKey(item, idx)}
-              style={{
-                borderRadius: '0px',
-                overflow: 'hidden',
-              }}
-            >
-              {img(item)}
-            </div>
-          ))}
+    <>
+      <div className={wrapperClass} style={wrapperStyle}>
+        <div className="w-full max-w-[1400px]">
+          {titleEl}
+          <div
+            className="portfolio-quad-grid"
+            style={{
+              display: 'grid',
+              gridTemplateColumns: '1fr 1fr 1fr 1fr',
+              gap: '35px',
+            }}
+          >
+            {images.map((item, idx) => (
+              <div
+                key={getKey(item, idx)}
+                style={{
+                  borderRadius: '0px',
+                  overflow: 'hidden',
+                }}
+              >
+                {img(item)}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+      
+      <style jsx>{`
+        .portfolio-quad-grid {
+          gap: 35px !important;
+        }
+        @media (max-width: 1024px) {
+          .portfolio-quad-grid {
+            gap: 35px !important;
+          }
+        }
+        @media (max-width: 768px) {
+          .portfolio-quad-grid {
+            gap: 35px !important;
+          }
+        }
+        @media (max-width: 640px) {
+          .portfolio-quad-grid {
+            width: 90% !important;
+            margin: 0 auto !important;
+            gap: 2.5% !important;
+          }
+        }
+      `}</style>
+      
+      <style jsx global>{`
+        @media (max-width: 640px) {
+          .section-title {
+            font-size: 28px !important;
+          }
+        }
+      `}</style>
+    </>
   )
 }
 
   // ── SIX: 2×3 grid ──
   if (layout === 'six') {
     return (
-      <div className={wrapperClass} style={wrapperStyle}>
-        <div className="w-full max-w-[1400px]">
-          {titleEl}
-          <div 
-            style={{ 
-              backgroundColor: '#000000',
-              padding: '14px'
-            }}
-          >
-            <div
-              style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(3, 1fr)',
-                gap: '35px',
+      <>
+        <div className={wrapperClass} style={wrapperStyle}>
+          <div className="w-full max-w-[1400px]">
+            {titleEl}
+            <div 
+              style={{ 
+                backgroundColor: '#000000',
+                padding: '14px'
               }}
-              className="portfolio-six-grid"
             >
-              {images.map((item, idx) => (
-                <div key={getKey(item, idx)}>
-                  {img(item)}
-                </div>
-              ))}
+              <div
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(3, 1fr)',
+                  gap: '35px',
+                }}
+                className="portfolio-six-grid"
+              >
+                {images.map((item, idx) => (
+                  <div key={getKey(item, idx)}>
+                    {img(item)}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
-
+        
         <style jsx>{`
           @media (max-width: 1024px) {
             .portfolio-six-grid {
@@ -219,144 +352,104 @@ if (layout === 'quad') {
           @media (max-width: 640px) {
             .portfolio-six-grid {
               grid-template-columns: repeat(1, 1fr) !important;
+              width: 65% !important;
+              margin: 0 auto !important;
             }
           }
         `}</style>
-      </div>
+        
+        <style jsx global>{`
+          @media (max-width: 640px) {
+            .section-title {
+              font-size: 28px !important;
+            }
+          }
+        `}</style>
+      </>
     )
   }
 
 // ── EIGHT: 4x2 grid ──
 if (layout === 'eight') {
   return (
-    <div className={wrapperClass} style={wrapperStyle}>
-      <div className="w-full max-w-[1400px]">
-        {titleEl}
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr 1fr 1fr',
-            gap: '35px',
-          }}
-        >
-          {images.map((item, idx) => (
-            <div key={getKey(item, idx)}
+    <>
+      <div className={wrapperClass} style={wrapperStyle}>
+        <div className="w-full max-w-[1400px]">
+          {titleEl}
+          <div
+            className="portfolio-eight-grid"
             style={{
-            borderRadius: '0px',
-            overflow: 'hidden',
+              display: 'grid',
+              gridTemplateColumns: '1fr 1fr 1fr 1fr',
+              gap: '35px',
             }}
-            
-            >{img(item)}</div>
-          ))}
+          >
+            {images.map((item, idx) => (
+              <div key={getKey(item, idx)}
+              style={{
+              borderRadius: '0px',
+              overflow: 'hidden',
+              }}
+              
+              >{img(item)}</div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+      
+      <style jsx>{`
+        .portfolio-eight-grid {
+          gap: 35px !important;
+        }
+        @media (max-width: 1024px) {
+          .portfolio-eight-grid {
+            gap: 35px !important;
+          }
+        }
+        @media (max-width: 768px) {
+          .portfolio-eight-grid {
+            gap: 35px !important;
+          }
+        }
+        @media (max-width: 640px) {
+          .portfolio-eight-grid {
+            width: 90% !important;
+            margin: 0 auto !important;
+            gap: 2.5% !important;
+          }
+        }
+      `}</style>
+      
+      <style jsx global>{`
+        @media (max-width: 640px) {
+          .section-title {
+            font-size: 28px !important;
+          }
+        }
+      `}</style>
+    </>
   )
 }
 
   // ── FOUR: 2×2 grid ──
   if (layout === 'four') {
     return (
-      <div className={wrapperClass} style={wrapperStyle}>
-        <div className="w-full max-w-[1400px]">
-          {titleEl}
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(2, 1fr)',
-              gap: '35px',
-            }}
-            className="portfolio-four-grid"
-          >
-            {images.map((item, idx) => (
-              <div
-                key={getKey(item, idx)}
-                style={{
-                  borderRadius: '0px',
-                  overflow: 'hidden',
-                }}
-              >
-                {img(item)}
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <style jsx>{`
-          @media (max-width: 640px) {
-            .portfolio-four-grid {
-              grid-template-columns: repeat(1, 1fr) !important;
-            }
-          }
-        `}</style>
-      </div>
-    )
-  }
-
-  // ── SIX-TALL: 3×2 grid (vertical orientation) ──
-  if (layout === 'six-tall') {
-    return (
-      <div className={wrapperClass} style={wrapperStyle}>
-        <div className="w-full max-w-[1024px]">
-          {titleEl}
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(2, 1fr)',
-              gap: '35px',
-            }}
-            className="portfolio-six-tall-grid"
-          >
-            {images.map((item, idx) => (
-              <div
-                key={getKey(item, idx)}
-                style={{
-                  borderRadius: '0px',
-                  overflow: 'hidden',
-                }}
-              >
-                {img(item)}
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <style jsx>{`
-          @media (max-width: 640px) {
-            .portfolio-six-tall-grid {
-              grid-template-columns: repeat(1, 1fr) !important;
-            }
-          }
-        `}</style>
-      </div>
-    )
-  }
-
-  // ── SIX-HORIZONTAL: 1×6 grid (horizontal orientation) ──
-  if (layout === 'six-horizontal') {
-    return (
-      <div className={wrapperClass} style={wrapperStyle}>
-        <div className="w-full max-w-[1400px]">
-          {titleEl}
-          <div 
-            style={{ 
-              backgroundColor: '#000000',
-              padding: '14px'
-            }}
-          >
+      <>
+        <div className={wrapperClass} style={wrapperStyle}>
+          <div className="w-full max-w-[1400px]">
+            {titleEl}
             <div
               style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(6, 1fr)',
+                gridTemplateColumns: 'repeat(2, 1fr)',
                 gap: '35px',
               }}
-              className="portfolio-six-horizontal-grid"
+              className="portfolio-four-grid"
             >
               {images.map((item, idx) => (
                 <div
                   key={getKey(item, idx)}
                   style={{
-                    position: 'relative',
                     borderRadius: '0px',
                     overflow: 'hidden',
                   }}
@@ -367,7 +460,113 @@ if (layout === 'eight') {
             </div>
           </div>
         </div>
+        
+        <style jsx>{`
+          @media (max-width: 640px) {
+            .portfolio-four-grid {
+              grid-template-columns: repeat(1, 1fr) !important;
+            }
+          }
+        `}</style>
+        
+        <style jsx global>{`
+          @media (max-width: 640px) {
+            .section-title {
+              font-size: 28px !important;
+            }
+          }
+        `}</style>
+      </>
+    )
+  }
 
+  // ── SIX-TALL: 3×2 grid (vertical orientation) ──
+  if (layout === 'six-tall') {
+    return (
+      <>
+        <div className={wrapperClass} style={wrapperStyle}>
+          <div className="w-full max-w-[1024px]">
+            {titleEl}
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(2, 1fr)',
+                gap: '35px',
+              }}
+              className="portfolio-six-tall-grid"
+            >
+              {images.map((item, idx) => (
+                <div
+                  key={getKey(item, idx)}
+                  style={{
+                    borderRadius: '0px',
+                    overflow: 'hidden',
+                  }}
+                >
+                  {img(item)}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        
+        <style jsx>{`
+          @media (max-width: 640px) {
+            .portfolio-six-tall-grid {
+              grid-template-columns: repeat(1, 1fr) !important;
+            }
+          }
+        `}</style>
+        
+        <style jsx global>{`
+          @media (max-width: 640px) {
+            .section-title {
+              font-size: 28px !important;
+            }
+          }
+        `}</style>
+      </>
+    )
+  }
+
+  // ── SIX-HORIZONTAL: 1×6 grid (horizontal orientation) ──
+  if (layout === 'six-horizontal') {
+    return (
+      <>
+        <div className={wrapperClass} style={wrapperStyle}>
+          <div className="w-full max-w-[1400px]">
+            {titleEl}
+            <div 
+              style={{ 
+                backgroundColor: '#000000',
+                padding: '14px'
+              }}
+            >
+              <div
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(6, 1fr)',
+                  gap: '35px',
+                }}
+                className="portfolio-six-horizontal-grid"
+              >
+                {images.map((item, idx) => (
+                  <div
+                    key={getKey(item, idx)}
+                    style={{
+                      position: 'relative',
+                      borderRadius: '0px',
+                      overflow: 'hidden',
+                    }}
+                  >
+                    {img(item)}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+        
         <style jsx>{`
           @media (max-width: 1280px) {
             .portfolio-six-horizontal-grid {
@@ -385,15 +584,33 @@ if (layout === 'eight') {
             }
           }
         `}</style>
-      </div>
+        
+        <style jsx global>{`
+          @media (max-width: 640px) {
+            .section-title {
+              font-size: 28px !important;
+            }
+          }
+        `}</style>
+      </>
     )
   }
 
   // ── FALLBACK ──
   return (
-    <div className={wrapperClass} style={wrapperStyle}>
-      {titleEl}
-      <div className="w-full max-w-[1400px]">{img(images[0] ?? 'image')}</div>
-    </div>
+    <>
+      <div className={wrapperClass} style={wrapperStyle}>
+        {titleEl}
+        <div className="w-full max-w-[1400px]">{img(images[0] ?? 'image')}</div>
+      </div>
+      
+      <style jsx global>{`
+        @media (max-width: 640px) {
+          .section-title {
+            font-size: 28px !important;
+          }
+        }
+      `}</style>
+    </>
   )
 }

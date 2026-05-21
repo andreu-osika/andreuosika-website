@@ -246,6 +246,11 @@ img {
   -webkit-text-stroke: 0.4px white;
 }
 
+.menu-item-link:visited {
+  color: white;
+  -webkit-text-stroke: 0.4px white;
+}
+
 @media (hover: hover) {
   .menu-item-link:hover {
     color: var(--brand-purple);
@@ -253,9 +258,15 @@ img {
   }
 }
 
-.menu-item-link:visited {
-  color: white;
-  -webkit-text-stroke: 0.4px white;
+@media (hover: none) {
+  .menu-item-link {
+    transition: none;
+  }
+  
+  .menu-item-link:active {
+    color: var(--brand-purple);
+    -webkit-text-stroke: 0.4px var(--brand-purple);
+  }
 }
 
 @media (max-width: 768px) {

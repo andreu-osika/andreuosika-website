@@ -70,7 +70,7 @@ export default function HomePage() {
                 margin: 0,
               }}
             >
-              I’m a digital product designer who helps innovation teams in healthcare and pet health accelerate 0-to-1 product development. 
+              I’m a digital product designer who helps innovation teams accelerate 0-to-1 product development. 
               With 20+ years of digital design experience and AI-augmented execution, I deliver enterprise quality work on startup timelines - turning concepts 
               into validated prototypes in weeks, not months. I bridge platform architecture, product UX, design systems, and rapid prototyping
               to move initiatives from idea to market-ready faster than traditional design cycles.

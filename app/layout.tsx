@@ -4,16 +4,16 @@ import './globals.css'
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.andreuosika.com'),
   title: {
-    default: 'Andreu Osika — Experience Design',
+    default: 'Andreu Osika - AI Augmented Product Design for Health Innovation',
     template: '%s — Andreu Osika',
   },
   description:
-    'Andreu Osika is a digital product designer based in San Francisco specializing in AI augmented UXUI design, and design systems.',
+    'Digital product designer helping innovation teams at healthcare and pet health companies accelerate 0-to-1 product development through AI-augmented execution and human-centered design.',
   openGraph: {
-    title: 'Andreu Osika Branding + Experience Design',
-    images: ['/images/apple_screen.jpg'], 
+    title: 'Andreu Osika - Product Design for Health Innovation',
+    images: ['/images/apple_screen.jpg'], // Verify this is 1200x630px
     description:
-      'Digital product designer based in San Francisco specializing in AI augmented UXUI design, and design systems.',
+      'Digital product designer specializing in health innovation, AI productization, and design systems. 29-month partnership with MARS Inc productizing AI-powered pet health diagnostics.',
     url: 'https://www.andreuosika.com',
     siteName: 'Andreu Osika',
     locale: 'en_US',
@@ -21,7 +21,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Andreu Osika Experience Design',
+    title: 'Andreu Osika — Product Design for Health Innovation',
+    description: 'Helping healthcare and pet health companies accelerate 0-to-1 product development.',
+    images: ['/images/apple_screen.jpg'],
   },
 }
 

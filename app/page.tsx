@@ -86,7 +86,7 @@ export default function HomePage() {
                 margin: 0,
               }}
             >
-              My background includes an MFA in Industrial Design from RISD, a BFA in Graphic Design from Illinois, 
+              My background includes an MFA in Industrial Design from RISD, a BFA in Graphic Design from UIUC, 
               and published work in Communication Arts, ID Magazine, and Graphis. Lead design work 
               at Nokia, Yahoo, Apple, and design system leadership at Achieve and Mursion. Currently I'm engaged
               with MARS Pet Health productizing AI diagnostics across eight tools, four divisions, 

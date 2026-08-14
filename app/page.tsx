@@ -87,8 +87,8 @@ export default function HomePage() {
               }}
             >
               My background includes an MFA in Industrial Design from RISD, a BFA in Graphic Design from UIUC, 
-              and published work in Communication Arts, ID Magazine, and Graphis. Lead design work 
-              at Nokia, Yahoo, Apple, and design system leadership at Achieve and Mursion. Currently I'm engaged
+              and published work in Communication Arts, ID Magazine, and Graphis. Lead design work at Nokia, Yahoo,
+              product design for Apple and Comcast through Hero Digital, and design system leadership at Achieve and Mursion. Currently I'm engaged
               with MARS Pet Health productizing AI diagnostics across eight tools, four divisions, 
               ten brands, and twenty-seven markets. The hard part here is not the scale; it's making model output 
               into something a pet-parent or veterinarian can actually use and trust.

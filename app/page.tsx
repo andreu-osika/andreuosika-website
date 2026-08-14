@@ -104,7 +104,7 @@ export default function HomePage() {
                 margin: 0,
               }}
             >
-              Whether you need a brand identity built from a unique perspective and fesh positioning, 
+              Whether you need a brand identity built from a unique perspective and fresh positioning, 
               a website designed and shipped, an on-brand design system your product teams can efficiently implement, 
               or an ongoing design partner, I bring the speed of AI-augmented tools with the judgment and craft of an experienced designer.
             </p>

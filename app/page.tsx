@@ -70,10 +70,10 @@ export default function HomePage() {
                 margin: 0,
               }}
             >
-              I’m a digital product designer who helps innovation teams accelerate 0-to-1 product development. 
-              With 20+ years of digital design experience and AI-augmented execution, I deliver enterprise quality work on startup timelines - turning concepts 
-              into validated prototypes in weeks, not months. I bridge platform architecture, product UX, design systems, and rapid prototyping
-              to move initiatives from idea to market-ready faster than traditional design cycles.
+              I run a one-person design studio in San Francisco. Brand identity, digital products,
+              and websites, delivered by the person you hire. Twenty plus years of design experience combined 
+              with AI-augmented execution means enterprise quality work on compressed timelines: concept
+              to finished system in weeks rather than months.
             </p>
 
             <p
@@ -86,9 +86,12 @@ export default function HomePage() {
                 margin: 0,
               }}
             >
-              My background includes an MFA in Industrial Design from RISD, published work in Communication Arts, ID Magazine, and Graphis, and 
-              two decades designing digital products - from companies like Nokia, Yahoo, and Apple to MARS’s innovation group, where I'm currently engaged in helping
-              productize AI for pet health diagnostics. I specialize at the intersection of health innovation, applied AI, and human-centered design.
+              My background includes an MFA in Industrial Design from RISD, a BFA in Graphic Design from Illinois, 
+              and published work in Communication Arts, ID Magazine, and Graphis. Two decades of senior design work 
+              at Nokia, Yahoo, and Comcast, design system leadership at Achieve and Mursion, and most recently 
+              a 29-month partnership with MARS Pet Health productizing AI diagnostics across eight tools, four divisions, 
+              ten brands, and twenty-seven markets. The hard part there was not the scale. It was making model output 
+              into something a pet-parent or veterinarian would actually trust.
             </p>
 
             <p
@@ -101,9 +104,9 @@ export default function HomePage() {
                 margin: 0,
               }}
             >
-              Whether you need a focused innovation sprint to validate a new concept, a fractional design partner to support your pipeline, or
-              platform architecture work for complex multi-product ecosystems, I bring the speed of AI-augmented tools with the judgment and craft of a
-              seasoned digital product design lead.
+              Whether you need a brand identity built from a unique perspective and fesh positioning, 
+              a website designed and shipped, a design system your product teams can efficiently implement, 
+              or an ongoing design partner, I bring the speed of AI-augmented tools with the judgment and craft of a seasoned design lead.
             </p>
 
             <p

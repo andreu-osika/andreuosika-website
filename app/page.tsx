@@ -106,7 +106,7 @@ export default function HomePage() {
             >
               Whether you need a brand identity built from a unique perspective and fesh positioning, 
               a website designed and shipped, an on-brand design system your product teams can efficiently implement, 
-              or an ongoing design partner, I bring the speed of AI-augmented tools with the judgment and craft of a seasoned design lead.
+              or an ongoing design partner, I bring the speed of AI-augmented tools with the judgment and craft of an experienced designer.
             </p>
 
             <p

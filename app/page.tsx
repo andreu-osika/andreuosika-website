@@ -72,8 +72,8 @@ export default function HomePage() {
             >
               I run a one-person design studio in San Francisco. Brand identity, digital products,
               and websites, delivered by the person you hire. Twenty plus years of design experience combined 
-              with AI-augmented execution means enterprise quality work on compressed timelines: concept
-              to finished system in weeks rather than months.
+              with AI-augmented execution means enterprise quality work on accelerated timelines: concept
+              to finished product in weeks rather than months.
             </p>
 
             <p
@@ -88,10 +88,10 @@ export default function HomePage() {
             >
               My background includes an MFA in Industrial Design from RISD, a BFA in Graphic Design from Illinois, 
               and published work in Communication Arts, ID Magazine, and Graphis. Two decades of senior design work 
-              at Nokia, Yahoo, and Comcast, design system leadership at Achieve and Mursion, and most recently 
-              a 29-month partnership with MARS Pet Health productizing AI diagnostics across eight tools, four divisions, 
-              ten brands, and twenty-seven markets. The hard part there was not the scale. It was making model output 
-              into something a pet-parent or veterinarian would actually trust.
+              at Nokia, Yahoo, design system leadership at Achieve and Mursion, and currently a wonderful partnership
+              with MARS Pet Health productizing AI diagnostics across eight tools, four divisions, 
+              ten brands, and twenty-seven markets. The hard part here is not the scale. It's making model output 
+              into something a pet-parent or veterinarian can actually use and trust.
             </p>
 
             <p
@@ -105,7 +105,7 @@ export default function HomePage() {
               }}
             >
               Whether you need a brand identity built from a unique perspective and fesh positioning, 
-              a website designed and shipped, a design system your product teams can efficiently implement, 
+              a website designed and shipped, an on-brand design system your product teams can efficiently implement, 
               or an ongoing design partner, I bring the speed of AI-augmented tools with the judgment and craft of a seasoned design lead.
             </p>
 

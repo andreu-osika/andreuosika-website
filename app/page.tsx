@@ -71,7 +71,7 @@ export default function HomePage() {
               }}
             >
               I run a one-person design studio in San Francisco. Brand identity, digital products,
-              and websites, delivered by the person you hire. Twenty plus years of design experience combined 
+              and websites, delivered by the person you hire. Fifteen plus years of design experience combined 
               with AI-augmented execution means enterprise quality work on accelerated timelines: concept
               to finished product in weeks rather than months.
             </p>

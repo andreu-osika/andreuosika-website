@@ -10,10 +10,10 @@ export const metadata: Metadata = {
   description:
     'Digital product designer helping innovation teams at healthcare and pet health companies accelerate 0-to-1 product development through AI-augmented execution and human-centered design.',
   openGraph: {
-    title: 'Andreu Osika - Product Design for Health Innovation',
+    title: 'Andreu Osika — Brand, Product & Web Design Studio',
     images: ['/images/apple_screen.jpg'], // Verify this is 1200x630px
     description:
-      'Digital product designer specializing in health innovation, AI productization, and design systems. 29-month partnership with MARS Inc productizing AI-powered pet health diagnostics.',
+      'A one-person design studio in San Francisco working across brand identity, digital product, and websites. 20+ years, including work for Apple, Yahoo, Nokia, and Comcast.',
     url: 'https://www.andreuosika.com',
     siteName: 'Andreu Osika',
     locale: 'en_US',
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Andreu Osika — Product Design for Health Innovation',
-    description: 'Helping healthcare and pet health companies accelerate 0-to-1 product development.',
+    title: 'Andreu Osika — Brand, Product & Web Design Studio',
+    description: 'A one-person design studio in San Francisco working across brand identity, digital product, and websites.',
     images: ['/images/apple_screen.jpg'],
   },
 }
